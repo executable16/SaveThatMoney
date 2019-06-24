@@ -16,7 +16,7 @@ int main()
 	int j=0;
 	for(int i=k;i<n;i++)
 	{	
-		prefixsum += (v[i] - v[i-k]);
+		prefixsum += (v[i] - v[i-k]); // include a window at i and also close window at i-k
 		maxsum = max(maxsum,prefixsum);
 	}
 	cout<<maxsum;
